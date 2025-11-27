@@ -15,11 +15,11 @@ avg=(n1+n2+n3+n4+n5)/5
 print("Average marks:",avg)
 if(avg>=100):
     grade="A"
-if(avg>=80):
+elif(avg>=80):
     grade="B"
-if(avg>=60):
+elif(avg>=60):
     grade="C"
-if(avg>=40):
+elif(avg>=40):
     grade="D"
 else:
     grade="Fail"
