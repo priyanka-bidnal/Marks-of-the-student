@@ -1,28 +1,28 @@
 import sys
-if len(sys.argv)==5:
-  n1=sys.argv[0]
-  n2=sys.argv[1]
-  n3=sys.argv[2]
-  n4=sys.argv[3]
-  n5=sys.argv[4]
+if len(sys.argv) == 6:
+    n1 = float(sys.argv[1])
+    n2 = float(sys.argv[2])
+    n3 = float(sys.argv[3])
+    n4 = float(sys.argv[4])
+    n5 = float(sys.argv[5])
+    print("User provided marks:")
 else:
-  n1=80
-  n2=60
-  n3=70
-  n4=50
-  n5=90
-avg=(n1+n2+n3+n4+n5)/5
-print("Average marks:",avg)
-if(avg>=100):
-    grade="A"
-elif(avg>=80):
-    grade="B"
-elif(avg>=60):
-    grade="C"
-elif(avg>=40):
-    grade="D"
+    n1 = 80
+    n2 = 70
+    n3 = 75
+    n4 = 60
+    n5 = 50
+    print("No input provided — using default marks:")
+avg = (n1 + n2 + n3 + n4 + n5) / 5
+if avg >= 100:
+    grade = 'A'
+elif avg >= 80:
+    grade = 'B'
+elif avg >= 65:
+    grade = 'C'
+elif avg >= 45:
+    grade = 'D'
 else:
-    grade="Fail"
-print("Grade=",grade)     
-  
-  
+    grade = "Fail"
+print("\nAverage Marks:", round(avg, 2))
+print("Grade:", grade)
